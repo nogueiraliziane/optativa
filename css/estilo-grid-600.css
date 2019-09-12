@@ -6,7 +6,7 @@ body,html {
 	border: 1px solid #000;
 	height: 100%;
 	display: grid;
-	grid-template-rows: 20%  auto 10%;
+	grid-template-rows: 20% min-content auto 10%;
 
 } 
 
@@ -16,17 +16,23 @@ body,html {
 
 #menu {
 	border: 1px solid #000;
-	display: none;
+	display: inherit;
+}
+
+#menu ul {
+	display: block;
+	padding: 0px;
 }
 
 #main {
 	border: 1px solid #000;
 	display: grid;
-	grid-template-columns: 8% auto;
+	grid-template-columns: auto;
 }
 
 #main #menu-lateral {
 	border: 1px solid #000;
+	display: none;
 }
 
 #main #content {
@@ -35,27 +41,4 @@ body,html {
 
 #footer {
 	border: 1px solid #000;
-}
-
-
-#menu ul {
-	display: flex;
-	list-style: none;
-}
-
-#menu ul li{
-	border: 1px solid #000;
-	margin: 5px;
-	padding: 5px;
-}
-
-#menu-lateral ul {
-	list-style: none;
-	padding: 0px;
-}
-
-#menu-lateral ul li{
-	border: 1px solid #000;
-	margin: 5px;
-	padding: 5px;
 }
